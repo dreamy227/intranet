@@ -12,9 +12,31 @@
 <div class="container">
   <p></p>
   <p align="center">⏱🔨</p>                                          
-  <div class="dropdown" align="center">
+  <div class="container" align="center">
     <center>
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-top:5px;">편지함<span class="caret"></span></button>
+    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#myModal" style="margin-top:5px;">편지함</button>
+      <!--MODAL-->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">편지함</h4>
+        </div>
+        <div class="modal-body">
+          <div class="btn-group">
+            <a href="https://intra.hansung.ac.kr/nanum/cflow/mail/mail_receivelist_f.jsp" target="_blank" class="btn btn-info" role="button">받은편지</a>
+            <a href="https://intra.hansung.ac.kr/nanum/cflow/mail/mail_sendlist_f.jsp" target="_blank" class="btn btn-info" role="button">보낸편지</a>
+            <a href="https://intra.hansung.ac.kr//nanum/cflow/mail/mail_write_in.jsp?isNew=yes" target="_blank" class="btn btn-info" role="button">편지쓰기</a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!--MODAL-->
     <ul class="dropdown-menu">
       <li><a href="https://intra.hansung.ac.kr/nanum/cflow/mail/mail_receivelist_f.jsp" target="_blank">받은편지</a></li>
       <li><a href="https://intra.hansung.ac.kr/nanum/cflow/mail/mail_sendlist_f.jsp" target="_blank">보낸편지</a></li>
