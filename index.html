@@ -5,52 +5,18 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-    function countGoUrl(id)
-{
-	document.pageaction.action = "https://intra.hansung.ac.kr/nanum/cflow/home/submenuframeset.jsp";
-	document.pageaction.target = "subcontents";
-	
-	var url = "";
-	switch(id){
-		case 20 :
-			url = "https://intra.hansung.ac.kr/nanum/cflow/mail/mail_receivelist_f.jsp";
-			document.pageaction.firstmenuid.value = "mail";
-			document.pageaction.topmenuid.value = "mail";
-			/*
-			url = "https://intra.hansung.ac.kr/servlet/com.nanum.xf.servlet.mail.XFMailServlet?protID=RpcNFMailViewRecvList_F";
-			document.pageaction.pageid.value = "mail";
-			document.pageaction.topmenuid.value = "mail";
-			document.pageaction.firstmenuid.value = "mail";
-			*/
-			break;
-		default :
-			alert("잘못된 아이디 입니다.");
-			return false;
-	}
-	
-	document.pageaction.firstmenu.value = url;
-	document.pageaction.submit();
-}
-  </script>
 </head>
 <body>
 
-<div class="sub_cont_main" onclick="countGoUrl(20);" onmouseover="classChange(this, true);" onmouseout="classChange(this, false);">
-			받은우편
-</div>
-
 <div class="container">
-  <h2>Dropdowns</h2>
-  <p>The .dropdown class is used to indicate a dropdown menu.</p>
-  <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
-  <p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle="dropdown".</p>                                          
+  <h2>Intranet</h2>
+  <p>⏱🔨</p>                                          
   <div class="dropdown">
     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">편지함
     <span class="caret"></span></button>
     <ul class="dropdown-menu">
-      <li><a href="https://intra.hansung.ac.kr/nanum/cflow/mail/mail_receivelist_f.jsp" target="_blank">받은우편</a></li>
-      <li><a href="https://intra.hansung.ac.kr/nanum/cflow/mail/mail_sendlist_f.jsp" target="_blank">보낸우편</a></li>
+      <li><a href="https://intra.hansung.ac.kr/nanum/cflow/mail/mail_receivelist_f.jsp" target="_blank">받은편지</a></li>
+      <li><a href="https://intra.hansung.ac.kr/nanum/cflow/mail/mail_sendlist_f.jsp" target="_blank">보낸편지</a></li>
       <li><a href="https://intra.hansung.ac.kr//nanum/cflow/mail/mail_write_in.jsp?isNew=yes" target="_blank">편지쓰기</a></li>
     </ul>
   </div>
