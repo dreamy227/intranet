@@ -12,9 +12,11 @@
 <script>
   OpenPopUp = function() 
   {
-    var popupX = (document.body.offsetWidth / 2) - (200 / 2);
-    var popupY= (window.screen.height / 2) - (300 / 2);
-    window.open('./menu.html', '', 'status=no, height=600, width=300, left='+ popupX + ', top='+ popupY + ', screenX='+ popupX + ', screenY= '+ popupY);
+    var Pwidth = 300
+    var Pheight = 500
+    var popupX = (document.body.offsetWidth / 2) - (Pwidth / 2);
+    var popupY= (window.screen.height / 2) - (Pheight / 2);
+    window.open('./menu.html', '', 'status=no, width=' + Pwidth + ', height= ' + Pheight + ', left=' + popupX + ', top=' + popupY + ', screenX=' + popupX + ', screenY=' + popupY);
   }
 </script>
   
